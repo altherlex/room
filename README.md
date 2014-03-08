@@ -4,7 +4,7 @@ A Rails 4 application for testing many ruby gems.
 
 Here's a [live demo](https://vast-mountain-7757.herokuapp.com/).
 
-<img src="https://travis-ci.org/altherlex/room.png">
+<img src="https://travis-ci.org/altherlex/room.png?branch=master">
 
 ### Tools
 
