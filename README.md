@@ -2,7 +2,7 @@
 
 A Rails 4 application for testing many ruby gems.
 
-Here's a [live demo](vast-mountain-7757.herokuapp.com/).
+Here's a [live demo](https://vast-mountain-7757.herokuapp.com/).
 
 ### Tools
 
