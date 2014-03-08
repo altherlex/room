@@ -2,7 +2,7 @@
 
 A Rails 4 application for testing many ruby gems.
 
-Here's a [live demo](https://vast-mountain-7757.herokuapp.com/).
+Here's a [live demo](http://sheltered-spire-8414.herokuapp.com/).
 
 <img src="https://travis-ci.org/altherlex/room.png?branch=master">
 
