@@ -1,15 +1,29 @@
 require 'spec_helper'
 
-# Specs in this file have access to a helper object that includes
-# the ReservesHelper. For example:
-#
-# describe ReservesHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
 describe ReservesHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+	include Devise::TestHelpers
+	helper ApplicationHelper
+
+	before{ 
+		@user = FactoryGirl.create :user
+		@reserve = FactoryGirl.create(:reserve)
+		@reserve.user_id = @user.id
+		sign_in :user, @user
+  }
+
+  it "should return valid head table" do
+  	(head_tag).should be_an_instance_of Array
+  	expect(head_tag.size).to eq(6)
+  end
+
+	it "have only week" do
+		date = Date.new(2014,1,1)
+		expect( now(date).saturday? ).to eq(false)
+		date = Date.new(2014,1,2)
+  	expect( now(date).sunday? ).to eq(false)
+  end
+
+  it "have return label about reserve" do
+  	helper.label_with_elem(@reserve).should be_an_instance_of Array
+	end
 end

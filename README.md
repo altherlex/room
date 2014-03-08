@@ -22,6 +22,15 @@ Here's a [live demo](https://vast-mountain-7757.herokuapp.com/).
 - Rails 4
 - Mysql
 
+### To Do
+
+- reg historic with [fullcalendar-rails](https://github.com/bokmann/fullcalendar-rails)
+- put in [travis](https://travis-ci.org/)
+- add column name for user
+- option to change language (i18n)
+- layout
+- admin can cancel a reserve
+
 ### Author
 
 About [Alther](http://about.me/alther)
