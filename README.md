@@ -4,6 +4,8 @@ A Rails 4 application for testing many ruby gems.
 
 Here's a [live demo](https://vast-mountain-7757.herokuapp.com/).
 
+<img src="https://travis-ci.org/altherlex/room.png">
+
 ### Tools
 
 - [Mysql](https://github.com/brianmario/mysql2)
@@ -15,6 +17,7 @@ Here's a [live demo](https://vast-mountain-7757.herokuapp.com/).
 - [Factory Girl](https://github.com/thoughtbot/factory_girl_rails)
 - [Thin](https://github.com/macournoyer/thin)
 - [Base-app](https://github.com/renderedtext/base-app) for jumpstart
+- [Travis](https://travis-ci.org/) for Integration tests
 
 ### Setting up
 
@@ -25,7 +28,6 @@ Here's a [live demo](https://vast-mountain-7757.herokuapp.com/).
 ### To Do
 
 - reg historic with [fullcalendar-rails](https://github.com/bokmann/fullcalendar-rails)
-- put in [travis](https://travis-ci.org/)
 - add column name for user
 - option to change language (i18n)
 - layout
