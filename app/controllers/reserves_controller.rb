@@ -4,6 +4,9 @@ class ReservesController < ApplicationController
 
 	def index
 	end
+	def show
+	end
+
 	def book
 		date=DateTime.new(
 			params[:year].to_i, 	
@@ -23,4 +26,9 @@ class ReservesController < ApplicationController
   	flash[:error]=e.message
   	render nothing:true,:status=> 423
   end
+  # Simple action
+  def feed
+  	#Reserve.where(["date between ?, ?", Time.at params[:start], Time.at params[:end]])
+  	render :json=>Reserve.all.map{|i| {title:i.user.email, start:i.date, end:(i.date+1.hour)}}
+	end
 end

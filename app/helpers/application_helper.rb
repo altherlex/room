@@ -9,11 +9,11 @@ module ApplicationHelper
 
   def label_with_elem(reserve)
     if reserve.nil?
-      ['Reserve', true]
+      [btn_reserve, true]
     elsif reserve.user_id==current_user.id
-      ['Uncheck', true]
+      [btn_uncheck, true]
     else # There is and aren't you
-      ["reserved for #{reserve.user.email}", false]
+      [btn_reserved( reserve.user.email), false]
     end    
   end
 
@@ -29,8 +29,21 @@ module ApplicationHelper
         label
       end
     else # past
-      "reserved for #{reserve.user.email}"
+      btn_reserved( reserve.user.email)
+      #"reserved for #{reserve.user.email}"
     end
+  end
+  
+  def btn_uncheck
+    "<span class='btn-lg glyphicon glyphicon-remove-circle'></span>You".html_safe
+  end
+  def btn_reserve
+    "<span class='btn glyphicon glyphicon-plus-sign'></span>".html_safe
+  end
+  def btn_reserved(txt='')
+    %{
+      <span class='btn-lg glyphicon glyphicon-ok-sign'></span>#{txt}
+    }.html_safe
   end
 
   def now(date=Date.today)

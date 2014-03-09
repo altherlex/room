@@ -6,6 +6,7 @@
 // //
 //= require jquery
 //= require jquery_ujs
+//= require fullcalendar
 
 $(document).ajaxComplete(function(event, request){
   if (request.status==200){

@@ -1,0 +1,32 @@
+<style>
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+</style>
+<%= link_to 'Voltar', '/'%>
+<div id='calendar'></div>
+<div id='my_calendar'></div>
+<script>
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+			header: {
+				left: '',
+				center: 'title',
+				right: 'prev,next today',
+			},
+    	weekends: false,
+    	weekMode: true,
+    	defaultView: 'basicWeek',
+    	dayNames: <%=I18n.t('date.util_day_names').values.inspect.html_safe%>,
+			//events: events
+			events:{
+	      url: 'feed',
+	      type: 'GET',
+	      error: function() {
+	          alert('there was an error while fetching events!');
+	      },
+    	}
+    })
+});
+</script>

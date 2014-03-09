@@ -11,6 +11,7 @@ Here's a [live demo](http://sheltered-spire-8414.herokuapp.com/).
 - [Mysql](https://github.com/brianmario/mysql2)
 - [Bootstrap 3](http://getbootstrap.com/)
 - [jQuery](https://github.com/rails/jquery-ujs)
+- [Fullcalendar-Rails](https://github.com/bokmann/fullcalendar-rails) for show the historic
 - [Devise](https://github.com/plataformatec/devise) for authenticating users with 
 - [Rspec](https://github.com/dchelimsky/rspec)
 - [Cucumber](https://github.com/aslakhellesoy/cucumber) with [Capybara](https://github.com/jnicklas/capybara)
@@ -27,7 +28,6 @@ Here's a [live demo](http://sheltered-spire-8414.herokuapp.com/).
 
 ### To Do
 
-- reg historic with [fullcalendar-rails](https://github.com/bokmann/fullcalendar-rails)
 - add column name for user
 - option to change language (i18n)
 - layout

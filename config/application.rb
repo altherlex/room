@@ -23,6 +23,7 @@ module BaseApp
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.precompile += ['application-print.css']
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
