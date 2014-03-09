@@ -6,10 +6,11 @@ Here's a [live demo](http://sheltered-spire-8414.herokuapp.com/).
 
 <img src="https://travis-ci.org/altherlex/room.png?branch=master">
 
-### Tools
+### Gems
 
 - [Mysql](https://github.com/brianmario/mysql2)
 - [Bootstrap 3](http://getbootstrap.com/)
+- [Haml](http://haml.info/)
 - [jQuery](https://github.com/rails/jquery-ujs)
 - [Fullcalendar-Rails](https://github.com/bokmann/fullcalendar-rails) for show the historic
 - [Devise](https://github.com/plataformatec/devise) for authenticating users with 
