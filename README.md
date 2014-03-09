@@ -2,7 +2,7 @@
 
 A Rails 4 application for testing many ruby gems.
 
-Here's a [live demo](http://sheltered-spire-8414.herokuapp.com/).
+Here's a [live demo](http://meeting-room.herokuapp.com/).
 
 <img src="https://travis-ci.org/altherlex/room.png?branch=master">
 
@@ -33,6 +33,7 @@ Here's a [live demo](http://sheltered-spire-8414.herokuapp.com/).
 - option to change language (i18n)
 - layout
 - admin can cancel a reserve
+- multiples rooms
 
 ### Author
 

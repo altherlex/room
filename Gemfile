@@ -51,4 +51,4 @@ end
 gem 'rails_12factor', group: :production
 
 gem 'haml'
-gem 'fullcalendar'
+gem 'fullcalendar-rails'
