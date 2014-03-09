@@ -29,6 +29,6 @@ class ReservesController < ApplicationController
   # Simple action
   def feed
   	#Reserve.where(["date between ?, ?", Time.at params[:start], Time.at params[:end]])
-  	render :json=>Reserve.all.map{|i| {title:i.user.email, start:i.date, end:(i.date+1.hour)}}
+  	render :json=>Reserve.all.map{|i| {title:"#{i.date.hour}h #{i.user.email}", start:i.date, end:(i.date+1.hour)}}
 	end
 end
