@@ -1,8 +1,8 @@
-# Room
+# THE GREAT MEETING ROOM
 
-A Rails 4 application for testing many ruby gems.
+A Rails 4 application for testing some ruby gems.
 
-Here's a [live demo](http://meeting-room.herokuapp.com/).
+Here's a [live demo](http://meeting-room.herokuapp.com/) from Heroku.
 
 <img src="https://travis-ci.org/altherlex/room.png?branch=master">
 

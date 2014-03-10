@@ -1,9 +1,7 @@
 language: ruby
-bundler_args: --without production development
-before_install:
-  - bundle install
 script:
-  - bundle exec rake db:setup
+  - bundle install
+  - bundle exec rake db:create
   - bundle exec rake db:migrate
   - bundle exec rake db:test:prepare
   - bundle exec rake spec
