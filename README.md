@@ -3,6 +3,7 @@
 A Rails 4 application for testing some ruby gems.
 
 Here's a [live demo](http://meeting-room.herokuapp.com/) from Heroku.
+Or try [here](http://dnatim.dyndns.org:3001) too
 
 <img src="https://travis-ci.org/altherlex/room.png?branch=master">
 
