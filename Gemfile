@@ -3,8 +3,8 @@ ruby '2.0.0'
 gem "rails", "4.0.2"
 
 # Use PostgreSQL as the database for Active Record
-#gem "pg" #, :require => "pg"
-gem 'mysql2'
+gem "pg" #, :require => "pg"
+#gem 'mysql2'
 
 # Compressor of JavaScript assets
 gem "uglifier", ">= 1.3.0"
@@ -52,4 +52,4 @@ gem 'rails_12factor', group: :production
 
 gem 'haml'
 gem 'fullcalendar-rails'
-gem 'therubyracer'
+#gem 'therubyracer'

@@ -30,6 +30,7 @@ GEM
     atomic (1.1.14)
     awesome_print (1.2.0)
     bcrypt-ruby (3.1.2)
+    bcrypt-ruby (3.1.2-x86-mingw32)
     builder (3.1.4)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -80,6 +81,7 @@ GEM
       mail (~> 2.2)
     erubis (2.7.0)
     eventmachine (1.0.3)
+    eventmachine (1.0.3-x86-mingw32)
     execjs (1.4.0)
       multi_json (~> 1.0)
     factory_girl (4.3.0)
@@ -90,8 +92,14 @@ GEM
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.3)
+    ffi (1.9.3-x86-mingw32)
+    fullcalendar-rails (1.6.4.0)
     gherkin (2.12.2)
       multi_json (~> 1.3)
+    gherkin (2.12.2-x86-mingw32)
+      multi_json (~> 1.3)
+    haml (4.0.5)
+      tilt
     hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.9)
@@ -118,6 +126,8 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    nokogiri (1.6.1-x86-mingw32)
+      mini_portile (~> 0.5.0)
     oauth2 (0.9.3)
       faraday (>= 0.8, < 0.10)
       jwt (~> 0.1.8)
@@ -136,6 +146,7 @@ GEM
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
     pg (0.17.1)
+    pg (0.17.1-x86-mingw32)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
@@ -221,6 +232,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   awesome_print
@@ -234,6 +246,8 @@ DEPENDENCIES
   dynamic_form
   email_spec
   factory_girl_rails
+  fullcalendar-rails
+  haml
   jquery-rails
   kaminari
   omniauth-facebook

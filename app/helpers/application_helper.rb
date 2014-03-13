@@ -29,7 +29,7 @@ module ApplicationHelper
         label
       end
     else # past
-      btn_reserved( reserve.user.email)
+      btn_reserved( reserve.user.email) if reserve
       #"reserved for #{reserve.user.email}"
     end
   end

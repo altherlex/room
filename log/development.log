@@ -1,2 +1,203 @@
   [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (103.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (2.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-13 06:49:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReservesController#index as HTML
+Completed 401 Unauthorized in 122ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-13 06:49:20 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (345.0ms)
+  Rendered layouts/application/_header.html.erb (3.0ms)
+  Rendered layouts/application/_flash_messages.html.erb (2.0ms)
+Completed 200 OK in 1466ms (Views: 1392.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 06:49:22 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 127.0.0.1 at 2014-03-13 06:49:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-13 06:49:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 06:49:22 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 127.0.0.1 at 2014-03-13 06:49:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 06:49:22 -0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-13 06:49:26 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.0ms)
+  Rendered layouts/application/_header.html.erb (2.0ms)
+  Rendered layouts/application/_flash_messages.html.erb (1.0ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-03-13 06:49:36 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t/Hse49rQpXTLKZV05Lu9i89pz3lJXQKB9xD0Z3WX7s=", "user"=>{"email"=>"para.alves@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mUser Exists (106.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'para.alves@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (202.0ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 13 Mar 2014 09:49:36 UTC +00:00], ["email", "para.alves@gmail.com"], ["encrypted_password", "$2a$10$xBeUN/aTgTdsHCsnk.tU0OFrsfe.sb1ta69QiUiEpI4oiwG4oBkiC"], ["updated_at", Thu, 13 Mar 2014 09:49:36 UTC +00:00]]
+  [1m[36m (48.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (21.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 3[0m  [["last_sign_in_at", Thu, 13 Mar 2014 09:49:36 UTC +00:00], ["current_sign_in_at", Thu, 13 Mar 2014 09:49:36 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 13 Mar 2014 09:49:36 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 735ms (ActiveRecord: 379.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-13 06:49:37 -0300
+Processing by ReservesController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mReserve Load (73.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 06:00:00.000000' LIMIT 1
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 06:00:00.000000' LIMIT 1
+  Rendered reserves/index.html.haml within layouts/application (406.0ms)
+Completed 500 Internal Server Error in 463ms
+
+ActionView::Template::Error (undefined method `user' for nil:NilClass):
+     9: 			%tr
+    10: 				%th= label
+    11: 				%th= reserve_tag(now, hour)
+    12: 				%th= reserve_tag(now+1.day, hour)
+    13: 				%th= reserve_tag(now+2.day, hour)
+    14: 				%th= reserve_tag(now+3.day, hour)
+    15: 				%th= reserve_tag(now+4.day, hour)
+  app/helpers/application_helper.rb:32:in `reserve_tag'
+  app/views/reserves/index.html.haml:12:in `block in _app_views_reserves_index_html_haml___854082333_42884520'
+  app/views/reserves/index.html.haml:8:in `each'
+  app/views/reserves/index.html.haml:8:in `_app_views_reserves_index_html_haml___854082333_42884520'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (73.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-13 06:50:35 -0300
+Processing by ReservesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mReserve Load (2.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 06:00:00.000000' LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 06:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 06:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 06:00:00.000000' LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 06:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 07:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 07:00:00.000000' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 07:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 07:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 07:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 08:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 08:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 08:00:00.000000' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReserve Load (3.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 08:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 08:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 09:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 09:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 09:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 09:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 09:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 10:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (2.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 10:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 10:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 10:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 10:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 11:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 11:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 11:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (0.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 11:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 11:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 12:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 12:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 12:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 12:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 12:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 13:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 13:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 13:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (2.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 13:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 13:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 14:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 14:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 14:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 14:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 14:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 15:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 15:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (2.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 15:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 15:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 15:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (2.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 16:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 16:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 16:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 16:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 16:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 17:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 17:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 17:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 17:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 17:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 18:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 18:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 18:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 18:00:00.000000' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 18:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 19:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 19:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 19:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 19:00:00.000000' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 19:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 20:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 20:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 20:00:00.000000' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 20:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 20:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 21:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 21:00:00.000000' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 21:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 21:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 21:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 22:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 22:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 22:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 22:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 22:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-10 23:00:00.000000' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mReserve Load (1.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-11 23:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (0.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-12 23:00:00.000000' LIMIT 1
+  [1m[36mReserve Load (3.0ms)[0m  [1mSELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-13 23:00:00.000000' LIMIT 1[0m
+  [1m[35mReserve Load (1.0ms)[0m  SELECT "reserves".* FROM "reserves" WHERE "reserves"."date" = '2014-03-14 23:00:00.000000' LIMIT 1
+  Rendered reserves/index.html.haml within layouts/application (374.0ms)
+  [1m[36mRole Load (40.0ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "roles_users" ON "roles"."id" = "roles_users"."role_id" WHERE "roles_users"."user_id" = $1 AND "roles"."name" = 'admin' LIMIT 1[0m  [["user_id", 3]]
+  Rendered layouts/application/_header.html.erb (168.0ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 640ms (Views: 427.0ms | ActiveRecord: 157.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 06:50:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 06:50:36 -0300
