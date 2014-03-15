@@ -21,7 +21,16 @@
           <% if current_user.admin? %>
             <li><%= link_to "Admin", admin_path %></li>
           <% end %>
-          <li><%= link_to "exit", destroy_user_session_path %></li>
+          <li>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">About<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://github.com/altherlex/room">Github</a></li>
+              <li><a href="https://travis-ci.org/altherlex/room">Travis</a></li>
+              <li class="divider"></li>
+              <li><a href="http://about.me/alther">Author</a></li>
+            </ul>
+          </li>
+          <li><%= link_to "Exit", destroy_user_session_path %></li>
         <% else %>
           <li><%= link_to "Sign up", new_user_registration_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
