@@ -34,7 +34,7 @@ test:
   database: room_development
   pool: 5
   username: postgres
-  password: admin
+  password: 
 
 production:
   adapter: postgresql
