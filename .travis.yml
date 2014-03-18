@@ -1,5 +1,9 @@
 language: ruby
 bundler_args: --without development
+before_script:
+  - psql -c 'create database room_test;' -U postgres
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
 script:
   - bundle install
   - rake db:create
