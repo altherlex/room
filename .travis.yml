@@ -6,11 +6,11 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
 script:
   - bundle install
-  - bundle exec rake db:create
-  - bundle exec rake db:migrate
-  - bundle exec rake db:test:prepare
-  - bundle exec rake spec
-  - bundle exec rake cucumber
+  - rake db:create
+  - rake db:migrate
+  - rake db:test:prepare
+  - rake spec
+  - rake cucumber
 rvm:
   - 1.9.3
   - 2.0.0

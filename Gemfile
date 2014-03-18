@@ -1,5 +1,7 @@
 source "https://rubygems.org"
-ruby '2.0.0'
+# For heroku
+#ruby '2.0.0'
+# Heroku
 gem "rails", "4.0.2"
 
 # Use PostgreSQL as the database for Active Record
