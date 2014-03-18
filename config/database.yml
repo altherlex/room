@@ -31,7 +31,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: room_development
+  database: room_test
   pool: 5
   username: postgres
   password: admin
@@ -39,7 +39,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: room_development
+  database: room_production
   pool: 5
   password: admin
 
