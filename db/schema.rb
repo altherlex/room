@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307170047) do
+ActiveRecord::Schema.define(version: 20150401141450) do
+
+  create_table "crawlers", force: true do |t|
+    t.text     "config"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "reserves", force: true do |t|
     t.datetime "date"

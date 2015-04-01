@@ -1,0 +1,54 @@
+Mysql2::Error: Table 'room_test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+Mysql2::Error: Table 'room_test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+Mysql2::Error: Table 'room_test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+Mysql2::Error: Table 'room_test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+Mysql2::Error: Table 'room_test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+Mysql2::Error: Table 'room_test.users' doesn't exist: SHOW FULL FIELDS FROM `users`
+  [1m[36m (23.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (20.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20110405113203)
+  [1m[35m (4.6ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (16.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`) [0m
+  [1m[35m (19.3ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110405113203')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRoles (20110415105605)
+  [1m[35m (6.1ms)[0m  CREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110415105605')
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to UserHasAndBelongsToManyRoles (20110415110329)
+  [1m[35m (5.3ms)[0m  CREATE TABLE `roles_users` (`role_id` int(11), `user_id` int(11)) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110415110329')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateReserves (20140307170047)
+  [1m[35m (5.0ms)[0m  CREATE TABLE `reserves` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `date` datetime, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140307170047')
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCrawlers (20150401141450)
+  [1m[35m (5.5ms)[0m  CREATE TABLE `crawlers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `config` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150401141450')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-01 14:51:28', 'john1@doe.com', '$2a$10$AawPCbKeM8m48s2zQdDEGuR.EaeXE1eWWUg9PGVWZ8ndfIgfGpO6K', '2015-04-01 14:51:28')[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m

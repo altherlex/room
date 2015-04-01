@@ -5,8 +5,8 @@ source "https://rubygems.org"
 gem "rails", "4.0.2"
 
 # Use PostgreSQL as the database for Active Record
-gem "pg" #, :require => "pg"
-#gem 'mysql2'
+#gem "pg" #, :require => "pg"
+gem 'mysql2'
 
 # Compressor of JavaScript assets
 gem "uglifier", ">= 1.3.0"
@@ -37,7 +37,8 @@ group :development do
 end
 
 group :test do
-  gem "factory_girl_rails"
+#  gem "factory_girl_rails"
+  gem 'factory_girl_rails', :require => false
   gem "cucumber-rails", :require => false
   gem "database_cleaner"
   gem "selenium-webdriver"
