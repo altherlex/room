@@ -782,3 +782,438 @@ SyntaxError (/srv/www/htdocs/room/app/models/crawler.rb:8: syntax error, unexpec
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.8ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (70.0ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 150.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 12:24:13 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.4ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (77.4ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 167ms (Views: 162.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 12:25:01 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (70.9ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 157ms (Views: 153.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 12:26:05 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (73.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 163ms (Views: 156.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:00 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (73.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 162ms (Views: 155.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:38 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:33:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (72.2ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 158ms (Views: 152.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:59 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:59 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:33:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:59 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:33:59 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (70.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 157ms (Views: 151.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:23 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:34:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (78.9ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 173ms (Views: 165.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:39 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:39 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:39 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:39 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:39 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:39 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (71.2ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 157ms (Views: 150.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:34:58 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:35:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (72.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 162ms (Views: 156.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:35:16 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:35:16 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:35:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:35:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:35:16 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:35:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:35:16 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:39:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (72.9ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 169ms (Views: 162.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:39:57 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:39:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:39:57 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:39:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:39:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:39:57 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:39:57 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (5.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (68.6ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 158ms (Views: 152.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 13:40:54 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 14:10:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (45.4ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined method `crawlers_path' for #<#<Class:0x00000004045160>:0x00000004054ea8>):
+    1: <%= form_for(@crawler) do |f| %>
+    2:   <% if @crawler.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@crawler.errors.count, "error") %> prohibited this crawler from being saved:</h2>
+  app/views/crawler/index.html.erb:1:in `_app_views_crawler_index_html_erb___495159287845631421_36053700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.3ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-01 14:11:49 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlerController#index as HTML
+  Rendered crawler/index.html.erb within layouts/application (69.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (37.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 176ms (Views: 169.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-01 14:11:50 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-01 14:11:50 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-01 14:11:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-01 14:11:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-01 14:11:50 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-01 14:11:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-01 14:11:50 -0300

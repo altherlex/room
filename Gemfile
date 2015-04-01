@@ -56,3 +56,7 @@ gem 'rails_12factor', group: :production
 gem 'haml'
 gem 'fullcalendar-rails'
 gem 'therubyracer'
+
+#gem "open-uri"
+gem "nokogiri"
+
