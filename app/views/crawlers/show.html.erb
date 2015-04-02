@@ -1,0 +1,12 @@
+<%= link_to 'Edit', edit_crawler_path(@crawler) %> |<%#= link_to 'Back', crawlers_path %>
+
+  <div class="field">
+    <%= label @crawler, :parametrize %><br />
+    <pre><%= @crawler.indentation_parametrize %></pre>
+  </div>
+<pre>
+# for help users
+http://www.nokogiri.org/tutorials/searching_a_xml_html_document.html
+http://www.w3schools.com/xpath/xpath_axes.asp
+http://www.w3.org/TR/xpath/#axes
+</pre>

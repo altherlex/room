@@ -254,6 +254,7 @@ DEPENDENCIES
   fullcalendar-rails
   haml
   jquery-rails
+  json
   kaminari
   mysql2
   nokogiri

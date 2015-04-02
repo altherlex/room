@@ -14,7 +14,8 @@
 ActiveRecord::Schema.define(version: 20150401141450) do
 
   create_table "crawlers", force: true do |t|
-    t.text     "config"
+    t.text     "configuration", limit: 16777215, null: false
+    t.integer  "user_id",                        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

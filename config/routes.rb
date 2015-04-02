@@ -1,7 +1,7 @@
 BaseApp::Application.routes.draw do
 
   #get "crawler/index"
-  resources :crawlers
+  resource :crawler
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   get "reserves/show"
@@ -15,5 +15,5 @@ BaseApp::Application.routes.draw do
   end
 
   #root :to => "reserves#index"
-  root :to => "crawler#index"
+  root :to => "crawlers#show"
 end
