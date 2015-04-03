@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 # For heroku
-#ruby '2.0.0'
+ruby '2.0.0'
 # Heroku
 gem "rails", "4.0.2"
 
-# Use PostgreSQL as the database for Active Record
+gem "pg", :group => :production
+gem "mysql2", :group => :development
 #gem "pg" #, :require => "pg"
-gem 'mysql2'
 
 # Compressor of JavaScript assets
 gem "uglifier", ">= 1.3.0"
