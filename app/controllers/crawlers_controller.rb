@@ -3,11 +3,10 @@ class CrawlersController < ApplicationController
 
   def show 
     @crawler = Crawler.find_or_create_by_user_id(user_id:current_user.id)
-#     @crawler = Crawler.new
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @crawler.parametrize }
+      format.text { render json: JSON.pretty_generate(@crawler.sweep_links) } 
     end
   end
   

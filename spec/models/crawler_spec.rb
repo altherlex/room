@@ -58,6 +58,9 @@ describe Crawler do
     it "#sweep_links (values dafult)" do
       Crawler.sweep_links(Crawler.new.parametrize).map{|i| i[:selectors]}.flatten.map{|i| i[:value]}.join.should include('%')
     end
+    it "#sweep_links (instance method)" do
+      Crawler.new.sweep_links.map{|i| i[:selectors]}.flatten.map{|i| i[:value]}.join.should include('%')
+    end
   end # context end
   context "CRUD" do
     let(:crawler){ 
@@ -74,7 +77,6 @@ describe Crawler do
       crawler.update_attributes(configuration:@PARAM)
       crawler.save!.should eq(true)
       c = Crawler.find_by_user_id(user.id) 
-      puts c.parametrize.inspect
       c.parametrize.should eq(@PARAM)
     end
   end # context CRUD end

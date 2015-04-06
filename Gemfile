@@ -57,6 +57,6 @@ gem 'haml'
 gem 'fullcalendar-rails'
 gem 'therubyracer'
 
-#gem "open-uri"
+#gem "open-uri" #ruby core
 gem "nokogiri"
 gem "json"

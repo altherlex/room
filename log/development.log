@@ -4738,3 +4738,1470 @@ Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-02 17:58
 
 
 Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-02 17:58:40 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 08:53:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+Completed 401 Unauthorized in 58ms
+
+
+Started GET "/users/sign_in" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.5ms)
+  Rendered layouts/application/_header.html.erb (1.3ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 81.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 08:53:53 -0300
+
+
+Started POST "/users/sign_in" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3NMvPjfkF/qiUQS+esnuKCm5WASZqZ12YcOD9rYu9hU=", "user"=>{"email"=>"para.alves@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'para.alves@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 5ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3NMvPjfkF/qiUQS+esnuKCm5WASZqZ12YcOD9rYu9hU=", "user"=>{"email"=>"para.alves@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/application/_header.html.erb (0.3ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 83ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:12 -0300
+
+
+Started POST "/users/sign_in" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3NMvPjfkF/qiUQS+esnuKCm5WASZqZ12YcOD9rYu9hU=", "user"=>{"email"=>"para.alves@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'para.alves@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3NMvPjfkF/qiUQS+esnuKCm5WASZqZ12YcOD9rYu9hU=", "user"=>{"email"=>"para.alves@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/application/_header.html.erb (0.3ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:24 -0300
+
+
+Started GET "/users/sign_up" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.4ms)
+  Rendered layouts/application/_header.html.erb (0.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:44 -0300
+
+
+Started POST "/users" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3NMvPjfkF/qiUQS+esnuKCm5WASZqZ12YcOD9rYu9hU=", "user"=>{"email"=>"para.alves@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'para.alves@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-06 11:54:53', 'para.alves@gmail.com', '$2a$10$rJ9XqMwb7YNCfzY35L74nuhx6zf7a0vYliCVQadI3o4s.JI0anoQa', '2015-04-06 11:54:53')
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2015-04-06 11:54:53', `current_sign_in_at` = '2015-04-06 11:54:53', `last_sign_in_ip` = '10.100.5.88', `current_sign_in_ip` = '10.100.5.88', `sign_in_count` = 1, `updated_at` = '2015-04-06 11:54:53' WHERE `users`.`id` = 3[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://livingstone:3000/
+Completed 302 Found in 109ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+Processing by CrawlersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- :link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n :selectors:\n - :selector: .guardaImgBgDetalhe\n :attr_name: index_cantareira_water\n :method: :at_css\n :send_emails:\n - :email: your-email@your-domain.com\n :at: 9am\n :every: 1.day\n', '2015-04-06 11:54:53', '2015-04-06 11:54:53', 3)
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  Rendered crawlers/show.html.erb within layouts/application (1.3ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (19.9ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 25.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 08:54:53 -0300
+
+
+Started GET "/crawler/edit.6" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+Processing by CrawlersController#edit as 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  Rendered crawlers/edit.html.erb within layouts/application (3.3ms)
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (2.2ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 14.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 08:55:06 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:27:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.5ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (54.0ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 222ms (Views: 136.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:27:56 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:27:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:27:56 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:27:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:27:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:27:56 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:27:56 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.1ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.1ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 217ms (Views: 129.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:28:57 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.8ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.1ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 217ms (Views: 131.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:29:21 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.8ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.2ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 215ms (Views: 130.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:26 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+Processing by CrawlersController#show as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+  Rendered crawlers/show.html.erb within layouts/application (1.4ms)
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1[0m
+  Rendered layouts/application/_header.html.erb (1.9ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:33:44 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (25.2ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (56.2ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 319ms (Views: 185.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:35:08 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (14.1ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (57.3ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 234ms (Views: 142.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:36:27 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.7ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (51.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 213ms (Views: 129.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:09 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:37:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.9ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.6ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 227ms (Views: 138.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:37:44 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:37:44 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:37:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:44 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:37:44 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:38:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.2ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.6ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 231ms (Views: 131.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:38:24 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:38:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:38:24 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:38:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:38:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:38:24 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:38:24 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (20.6ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (56.2ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 295ms (Views: 173.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:42:50 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.7ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (51.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 214ms (Views: 129.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:43:40 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:45:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.9ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.4ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 228ms (Views: 130.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:45:30 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:45:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:45:30 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:45:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:45:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:45:30 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:45:30 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.9ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (51.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 214ms (Views: 130.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:47:54 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:49:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.2ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (53.7ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 226ms (Views: 133.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:49:45 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:49:45 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:49:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:49:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:49:45 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:49:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:49:45 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 09:49:50 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+Errno::ENOENT (No such file or directory - http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx):
+  app/models/crawler.rb:30:in `initialize'
+  app/models/crawler.rb:30:in `open'
+  app/models/crawler.rb:30:in `access'
+  app/models/crawler.rb:43:in `block in sweep_links'
+  app/models/crawler.rb:42:in `each'
+  app/models/crawler.rb:42:in `sweep_links'
+  app/models/crawler.rb:26:in `sweep_links'
+  app/controllers/crawlers_controller.rb:9:in `block (2 levels) in show'
+  app/controllers/crawlers_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:52:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.0ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.6ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 215ms (Views: 130.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:52:30 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:52:30 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:52:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:52:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:52:30 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:52:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:52:30 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 09:52:39 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+Errno::ENOENT (No such file or directory - http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx):
+  app/models/crawler.rb:30:in `initialize'
+  app/models/crawler.rb:30:in `open'
+  app/models/crawler.rb:30:in `access'
+  app/models/crawler.rb:43:in `block in sweep_links'
+  app/models/crawler.rb:42:in `each'
+  app/models/crawler.rb:42:in `sweep_links'
+  app/models/crawler.rb:26:in `sweep_links'
+  app/controllers/crawlers_controller.rb:9:in `block (2 levels) in show'
+  app/controllers/crawlers_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.3ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (53.0ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 225ms (Views: 136.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 09:57:55 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 09:58:04 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+Errno::ENOENT (No such file or directory - http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx):
+  app/models/crawler.rb:30:in `initialize'
+  app/models/crawler.rb:30:in `open'
+  app/models/crawler.rb:30:in `access'
+  app/models/crawler.rb:43:in `block in sweep_links'
+  app/models/crawler.rb:42:in `each'
+  app/models/crawler.rb:42:in `sweep_links'
+  app/models/crawler.rb:26:in `sweep_links'
+  app/controllers/crawlers_controller.rb:9:in `block (2 levels) in show'
+  app/controllers/crawlers_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT `crawlers`.* FROM `crawlers` ORDER BY `crawlers`.`id` DESC LIMIT 1
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:07:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (14.4ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (57.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 199ms (Views: 141.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:07:46 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:07:46 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:07:46 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:07:46 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:07:46 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:07:46 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:07:46 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:07:51 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 5277ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (14.9ms)
+  [1m[35mRole Load (0.3ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (56.6ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 204ms (Views: 146.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:09:48 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:09:54 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 5224ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.8ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 187ms (Views: 133.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:10:34 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:10:39 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 221ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:12:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (14.0ms)
+  [1m[35mRole Load (0.3ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (57.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 203ms (Views: 144.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:12:10 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:12:10 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:12:10 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:12:10 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:12:10 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:12:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:12:10 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:12:20 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 5197ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` ORDER BY `crawlers`.`id` DESC LIMIT 1[0m
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.1ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (53.7ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.4ms)
+Completed 200 OK in 199ms (Views: 148.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:24:46 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:24:57 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.4ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 5244ms
+
+NoMethodError (undefined method `json' for #<Array:0x00000004cc3a68>):
+  app/controllers/crawlers_controller.rb:9:in `block (2 levels) in show'
+  app/controllers/crawlers_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.7ms)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` ORDER BY `crawlers`.`id` DESC LIMIT 1[0m
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` ORDER BY `crawlers`.`id` DESC LIMIT 1[0m
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` ORDER BY `crawlers`.`id` DESC LIMIT 1[0m
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` ORDER BY `crawlers`.`id` DESC LIMIT 1[0m
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:38:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (14.4ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (53.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 206ms (Views: 148.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:38:32 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:38:32 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:38:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:38:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:38:32 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:38:32 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:38:32 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:38:37 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 237ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.0ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.4ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 131.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:39:33 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:39:37 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 191ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.8ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 131.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:44:20 -0300
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:45:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.6ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.8ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 183ms (Views: 130.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:45:21 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:45:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:45:21 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:45:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:45:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:45:21 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:45:21 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:45:25 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 5241ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.9ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (52.7ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 131.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:47:36 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:47:39 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.4ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 269ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:50:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.7ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (53.6ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 131.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:50:06 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:50:06 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:50:06 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:50:06 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:50:06 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:50:06 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:50:06 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:50:09 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 5207ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:53:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (12.6ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (51.6ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 129.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:53:44 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:53:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:53:44 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:53:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:53:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:53:44 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:53:44 -0300
+
+
+Started GET "/crawler.json" for 10.100.5.88 at 2015-04-06 10:53:46 -0300
+Processing by CrawlersController#show as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 5228ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.1ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (53.5ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 187ms (Views: 133.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:54:55 -0300
+
+
+Started GET "/crawler.text" for 10.100.5.88 at 2015-04-06 10:54:57 -0300
+Processing by CrawlersController#show as TEXT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 5185ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by CrawlersController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1[0m
+  Rendered crawlers/show.html.erb within layouts/application (13.0ms)
+  [1m[35mRole Load (0.2ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3 AND `roles`.`name` = 'admin' LIMIT 1
+  Rendered layouts/application/_header.html.erb (53.3ms)
+  Rendered layouts/application/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 184ms (Views: 132.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+
+
+Started GET "/assets/crawler.css?body=1" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+
+
+Started GET "/assets/fullcalendar.css?body=1" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+
+
+Started GET "/assets/fullcalendar.js?body=1" for 10.100.5.88 at 2015-04-06 10:57:06 -0300
+
+
+Started GET "/crawler.text" for 10.100.5.88 at 2015-04-06 10:57:10 -0300
+Processing by CrawlersController#show as TEXT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from show at /srv/www/htdocs/room/app/controllers/crawlers_controller.rb:5)
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 ORDER BY `crawlers`.`id` ASC LIMIT 1
+Completed 200 OK in 7087ms (Views: 0.2ms | ActiveRecord: 0.7ms)

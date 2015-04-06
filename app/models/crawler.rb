@@ -23,7 +23,9 @@ class Crawler < ActiveRecord::Base
     JSON.pretty_generate self.parametrize
   end
   def sweep_links
-    Crawler.sweep_links(@parametrize)
+    result = Crawler.sweep_links(self.configuration)
+    self.configuration[:links] = result.first 
+    self.configuration
   end
   class << self
     def access(link)

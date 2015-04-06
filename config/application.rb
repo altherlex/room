@@ -5,7 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemdile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
-
+require "open-uri" 
 module BaseApp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
