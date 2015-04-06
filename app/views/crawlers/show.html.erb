@@ -1,13 +1,19 @@
 <%= link_to 'Edit', edit_crawler_path(@crawler) %> |<%#= link_to 'Back', crawlers_path %>
-<div class="row">
+<div class="row" style="padding-bottom: 5px;">
+  <div class="col-md-6">
+      <%= label @crawler, :parametrize %><br />
+  </div>
+  <div class="col-md-6">
+    <a class="btn btn-default" href="#" onclick="test_parametrize()" role="button">Test</a>
+  </div>
+</div>
+<Div class="row">
   <div class="col-md-6">
     <div class="field">
-      <%= label @crawler, :parametrize %><br />
       <pre><%= @crawler.indentation_parametrize %></pre>
     </div>
   </div>
   <div class="col-md-6">
-    <a class="btn btn-default" href="#" onclick="test_parametrize()" role="button">Test</a>
     <pre id="result" name="result"></pre>
   </div>
 </div>
