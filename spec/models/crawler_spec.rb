@@ -59,7 +59,7 @@ describe Crawler do
       Crawler.sweep_links(Crawler.new.parametrize).map{|i| i[:selectors]}.flatten.map{|i| i[:value]}.join.should include('%')
     end
     it "#sweep_links (instance method)" do
-      Crawler.new.sweep_links.map{|i| i[:selectors]}.flatten.map{|i| i[:value]}.join.should include('%')
+      Crawler.new.sweep_links[:links].map{|i| i[:selectors]}.flatten.map{|i| i[:value]}.join.should include('%')
     end
   end # context end
   context "CRUD" do

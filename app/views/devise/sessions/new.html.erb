@@ -1,5 +1,9 @@
 <div class="page-header">
-  <h2>Sign in</h2>
+  <div class="jumbotron">
+    <h1>Crawler-room <small>for spying internet's information</small></h1>
+    <p>Here you can check many information from the internet and have them in your e-mail.</p>
+    <p>Easy to configure and useful for your daily. You can follow: a price in store; the packcage in correio; etc.</p>
+  </div>
 </div>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => "form-horizontal", :role => "form" }) do |f| %>
@@ -39,7 +43,7 @@
 
 <% end %>
 
-<div class="row top48">
+<div class="row top0">
   <div class="col-sm-offset-2 col-sm-4">
     <%= render "devise/shared/links" %>
   </div>

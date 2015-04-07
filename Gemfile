@@ -60,3 +60,4 @@ gem 'therubyracer'
 #gem "open-uri" #ruby core
 gem "nokogiri"
 gem "json"
+gem "awesome_print"

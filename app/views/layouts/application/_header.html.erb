@@ -9,7 +9,7 @@
       </button>
 
       <div class="alert-info">
-        <%= link_to "Meeting", root_path, :class => "navbar-brand alert-link" %>
+        <%= link_to "Crawler-room", root_path, :class => "navbar-brand alert-link" %>
       </div>
     </div>
 
@@ -17,25 +17,25 @@
     <div class="collapse navbar-collapse" id="baseapp-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
-          <li><%= link_to "Welcome #{current_user.email}", edit_user_registration_path %></li>
+          <li><%= link_to current_user.email, edit_user_registration_path %></li>
           <% if current_user.admin? %>
             <li><%= link_to "Admin", admin_path %></li>
           <% end %>
           <li><%= link_to "Reserves", reserves_show_path %></li>
-          <li>
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">About<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="https://github.com/altherlex/room">Github</a></li>
-              <li><a href="https://travis-ci.org/altherlex/room">Travis</a></li>
-              <li class="divider"></li>
-              <li><a href="http://about.me/alther">Author</a></li>
-            </ul>
-          </li>
           <li><%= link_to "Exit", destroy_user_session_path %></li>
         <% else %>
           <li><%= link_to "Sign up", new_user_registration_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
         <% end -%>
+        <li>
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">About<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/altherlex/room">Github</a></li>
+            <li><a href="https://travis-ci.org/altherlex/room">Travis</a></li>
+            <li class="divider"></li>
+            <li><a href="http://about.me/alther">Author</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
 

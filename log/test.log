@@ -4244,3 +4244,585 @@ Mysql2::Error: Column 'configuration' cannot be null: UPDATE `crawlers` SET `con
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35m (0.1ms)[0m  COMMIT
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:22:45', 'john1@doe.com', '$2a$10$rhNgdenPWcpPtLdcuFQ1XuQg21UKjfTHoOAzO5yT9OtQ/zGVmuMuW', '2015-04-07 14:22:45')[0m
+  [1m[35m (9.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.7ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john2@doe.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:22:54', 'john2@doe.com', '$2a$10$JQ4hI.OQOcc1tas7KlJeaugK2jkhqpxgaY2Y.UNvz1LbD4qnKX9ym', '2015-04-07 14:22:54')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('--- {}\n', '2015-04-07 14:22:54', '2015-04-07 14:22:54', 1)
+  [1m[36m (11.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john3@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:22:54', 'john3@doe.com', '$2a$10$Mw1mwPHDbK5SfkxfHdAZL.4EK74IrL/9nvOcbsYvE7D9U/R1h8Dna', '2015-04-07 14:22:54')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('--- {}\n', '2015-04-07 14:22:54', '2015-04-07 14:22:54', 2)[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 2 LIMIT 1
+  [1m[36m (1.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john4@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:22:54', 'john4@doe.com', '$2a$10$SHkBbdQDf4Ni1Nv1qSRtxOKcE.c.JXrsnu7BY3.SzDGAyokXymTxq', '2015-04-07 14:22:54')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('--- {}\n', '2015-04-07 14:22:54', '2015-04-07 14:22:54', 3)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `crawlers` SET `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n', `updated_at` = '2015-04-07 14:22:54' WHERE `crawlers`.`id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `crawlers` SET `updated_at` = '2015-04-07 14:22:54', `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n' WHERE `crawlers`.`id` = 3
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:23:59', 'john1@doe.com', '$2a$10$on/2hzhgXZMJEbsC8cgtY.ATKTYRzJYdn5zJQjbRSWsZwroR.xAPu', '2015-04-07 14:23:59')[0m
+  [1m[35m (8.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.5ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john2@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:24:12', 'john2@doe.com', '$2a$10$Clj1bkDqJAQzRIggzhjISOyjxJN1krpdH0StkwSKH.j5G0ljPZSmK', '2015-04-07 14:24:12')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('--- {}\n', '2015-04-07 14:24:12', '2015-04-07 14:24:12', 1)
+  [1m[36m (4.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john3@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:24:12', 'john3@doe.com', '$2a$10$xSnqGnAg9gp.6VOpSHB.4OahlDMDX7rRjvONVmFtDngiAomNAbRkW', '2015-04-07 14:24:12')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('--- {}\n', '2015-04-07 14:24:12', '2015-04-07 14:24:12', 2)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 2 LIMIT 1
+  [1m[36m (0.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john4@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:24:12', 'john4@doe.com', '$2a$10$N9EZBBSWLT6J/MY6qAZ.9OC43BmE3y1Y05i.nAG.aMDA6P6AaCeru', '2015-04-07 14:24:12')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('--- {}\n', '2015-04-07 14:24:12', '2015-04-07 14:24:12', 3)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `crawlers` SET `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n', `updated_at` = '2015-04-07 14:24:12' WHERE `crawlers`.`id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `crawlers` SET `updated_at` = '2015-04-07 14:24:12', `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n' WHERE `crawlers`.`id` = 3
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:24:45', 'john1@doe.com', '$2a$10$k4oQ9fDgsDZIuHvZKKBiCeLHPq3M33wqD2veKbH0jsCZedLyBa2ny', '2015-04-07 14:24:45')[0m
+  [1m[35m (9.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.5ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.2ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:25:49', 'john1@doe.com', '$2a$10$H6j./K956pQt2hkhUPXrSuhFbJ6oT1MgqaNKWNpQm4Mpe3dpMoL.2', '2015-04-07 14:25:49')[0m
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.3ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:29:16', 'john1@doe.com', '$2a$10$5zga61ZpfsOv1jRd6Q8aAO0vNCdgHPIzEHIgZ0NG7Dr1aaA8LPJxa', '2015-04-07 14:29:16')[0m
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.3ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john2@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:29:24', 'john2@doe.com', '$2a$10$yHp1mmyxjSZsV5oqnlIyQONM8En33JquFBHAGa98TnNNoFUaMbHO.', '2015-04-07 14:29:24')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 14:29:24', '2015-04-07 14:29:24', 1)
+  [1m[36m (3.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john3@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:29:24', 'john3@doe.com', '$2a$10$qZ8FrtpQZu01w32j5/EKMuUpSHE.EK7HtuttmoaEMu8Le9H02fUfC', '2015-04-07 14:29:24')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 14:29:24', '2015-04-07 14:29:24', 2)[0m
+  [1m[35mCrawler Load (0.5ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 2 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john4@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 14:29:24', 'john4@doe.com', '$2a$10$AX2DMtsVfDykGIDravLQcODQNcY5R0vAFCS5ayicVWn2kXKf5WXAi', '2015-04-07 14:29:24')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 14:29:24', '2015-04-07 14:29:24', 3)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `crawlers` SET `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n', `updated_at` = '2015-04-07 14:29:24' WHERE `crawlers`.`id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `crawlers` SET `updated_at` = '2015-04-07 14:29:24', `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n' WHERE `crawlers`.`id` = 3
+  [1m[36mCrawler Load (0.3ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:33:49', 'john1@doe.com', '$2a$10$n5oXiMIieVk/0MuVnkErCuQ9VrRxrGVbkNfHOHmM6LLar.wv8Rbm.', '2015-04-07 16:33:49')[0m
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.5ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (1.3ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (2.0ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (2.7ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (3.1ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john2@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:33:58', 'john2@doe.com', '$2a$10$VW3aQFzr8vbifHSenmql/OnJlT79UtHZBWlu0Rmqb3CvNMsFICUwK', '2015-04-07 16:33:58')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:33:58', '2015-04-07 16:33:58', 1)
+  [1m[36m (3.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john3@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:33:58', 'john3@doe.com', '$2a$10$.mYr9txD0JueYyFNiqasJucJ1MdygM/Bxq6I45G8S8hwaKQpaepeG', '2015-04-07 16:33:58')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:33:58', '2015-04-07 16:33:58', 2)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 2 LIMIT 1
+  [1m[36m (0.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john4@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:33:58', 'john4@doe.com', '$2a$10$o.65LnJ/mqlKDuqwjdN3FeH6095kPtrgYINu5Vxicw3FC6VW4zeyi', '2015-04-07 16:33:58')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:33:58', '2015-04-07 16:33:58', 3)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `crawlers` SET `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n', `updated_at` = '2015-04-07 16:33:58' WHERE `crawlers`.`id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `crawlers` SET `updated_at` = '2015-04-07 16:33:58', `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n' WHERE `crawlers`.`id` = 3
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:46:29', 'john1@doe.com', '$2a$10$VmY7SgcXRI3Aw91t.gqjIuOgmf/1ruPS6HzKxZPkVkzYT66pYBcSm', '2015-04-07 16:46:29')[0m
+  [1m[35m (8.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (3.0ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john2@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:46:42', 'john2@doe.com', '$2a$10$zg92HppzldHYGCaisAkhrevmSnX3VOzf9ilOsnMW6dvvIXJI/SvGi', '2015-04-07 16:46:42')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:46:42', '2015-04-07 16:46:42', 1)
+  [1m[36m (3.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john3@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:46:42', 'john3@doe.com', '$2a$10$jx2h7IuQ37f0izmEvrNEQejjHwmU.0HqvAJP5EpmzWaqe6Up7OFkW', '2015-04-07 16:46:42')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:46:42', '2015-04-07 16:46:42', 2)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 2 LIMIT 1
+  [1m[36m (0.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john4@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:46:42', 'john4@doe.com', '$2a$10$vu2qKnjUS0RVAwi6K4hi6O4dUIRvtAHUnAc.keWSV6ZsdGRViz1dG', '2015-04-07 16:46:42')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:46:42', '2015-04-07 16:46:42', 3)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `crawlers` SET `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n', `updated_at` = '2015-04-07 16:46:42' WHERE `crawlers`.`id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `crawlers` SET `updated_at` = '2015-04-07 16:46:42', `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n' WHERE `crawlers`.`id` = 3
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:49:04', 'john1@doe.com', '$2a$10$8JeOwIBx2pe1lF7eAGJCsuUBrzt1o.RUNiiQyEzdlMfnI1lf2XcLm', '2015-04-07 16:49:04')[0m
+  [1m[35m (8.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.6ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.5ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (0.9ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john2@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:49:11', 'john2@doe.com', '$2a$10$qAIGXKVngRS6gHmF51IddeSMVDBWKAI8qrpLdJ2l4o7aoP.VCw592', '2015-04-07 16:49:11')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:49:11', '2015-04-07 16:49:11', 1)
+  [1m[36m (3.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john3@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:49:11', 'john3@doe.com', '$2a$10$LI2eEa1BNu0hBVHUnhlWs.M5J6YMZw/.BOot9IZx2khWpziB5qlna', '2015-04-07 16:49:11')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:49:11', '2015-04-07 16:49:11', 2)[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 2 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john4@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:49:11', 'john4@doe.com', '$2a$10$JQY4En1M49ddB1Sif.KxmOFfV2QmZVSlzHO3CMIzFU21mbl6Dbaje', '2015-04-07 16:49:11')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:49:11', '2015-04-07 16:49:11', 3)[0m
+  [1m[35mCrawler Load (0.3ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `crawlers` SET `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n', `updated_at` = '2015-04-07 16:49:11' WHERE `crawlers`.`id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `crawlers` SET `updated_at` = '2015-04-07 16:49:11', `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n' WHERE `crawlers`.`id` = 3
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:50:24', 'john1@doe.com', '$2a$10$N8iI2WVLawOrZYqsfbcHY.t28tFJ.rMnAyN.tSw10PwzNGMsCPkr.', '2015-04-07 16:50:24')[0m
+  [1m[35m (12.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.2ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (0.9ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (0.8ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (0.8ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:53:05', 'john1@doe.com', '$2a$10$IQuZeHy1zWsVKuZzMm/JfOXIwnaqBsO2u4VbAZ5T/KxkGVcA2ZOru', '2015-04-07 16:53:05')[0m
+  [1m[35m (9.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.5ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.1ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:53:44', 'john1@doe.com', '$2a$10$wKHqPU3ZTt6i5WkI7uSQHO3HIzXvlt70jkFHy2vPQZY0Go0FdAHie', '2015-04-07 16:53:44')[0m
+  [1m[35m (11.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (3.1ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (2.7ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (3.1ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (3.0ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (2.2ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:53:58', 'john1@doe.com', '$2a$10$YBFMEcxvbLKsQHhn8WNPt.nwiX2YKY/pbdHXnFSLu6FcpH58QLr2K', '2015-04-07 16:53:58')[0m
+  [1m[35m (9.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  select table_name from information_schema.views where table_schema = 'room_test'
+  [1m[36m (1.4ms)[0m  [1mTRUNCATE TABLE `crawlers`;[0m
+  [1m[35m (1.1ms)[0m  TRUNCATE TABLE `reserves`;
+  [1m[36m (1.8ms)[0m  [1mTRUNCATE TABLE `roles`;[0m
+  [1m[35m (1.0ms)[0m  TRUNCATE TABLE `roles_users`;
+  [1m[36m (1.0ms)[0m  [1mTRUNCATE TABLE `users`;[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john2@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:54:06', 'john2@doe.com', '$2a$10$r7ZorzY8ANCked0IZW9W3Op72mIK.EQhVXRnY4k00dM6aUjmT5flm', '2015-04-07 16:54:06')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:54:06', '2015-04-07 16:54:06', 1)
+  [1m[36m (3.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john3@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:54:06', 'john3@doe.com', '$2a$10$5bil/bm/3DNH0syqwTYSdutYlmdIUvWualp9oTX3X/vwoLY09qLBS', '2015-04-07 16:54:06')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:54:06', '2015-04-07 16:54:06', 2)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 2 LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john4@doe.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 16:54:06', 'john4@doe.com', '$2a$10$pgZSj4h3wzUgv7Ndo5r2ReyP815HjkHThSuS043xi8O/I5dGSr/ne', '2015-04-07 16:54:06')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `crawlers` (`configuration`, `created_at`, `updated_at`, `user_id`) VALUES ('---\n:links:\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n link: http://www2.sabesp.com.br/mananciais/DivulgacaoSiteSabesp.aspx\n selectors:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n selector: .guardaImgBgDetalhe\n attr_name: index_cantareira_water\n method: :at_css\n value: 19,6 %\n send_emails:\n - !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n email: your-email@your-domain.com\n at: 9am\n every: 1.day\n', '2015-04-07 16:54:06', '2015-04-07 16:54:06', 3)[0m
+  [1m[35mCrawler Load (0.2ms)[0m  SELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `crawlers` SET `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n', `updated_at` = '2015-04-07 16:54:06' WHERE `crawlers`.`id` = 3[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `crawlers` SET `updated_at` = '2015-04-07 16:54:06', `configuration` = '---\n:links:\n- :link: http://goo.gl/LEKHth\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: smartphone-motorola-novo-moto-x-desbloqueado\n- :link: http://goo.gl/TwfgFJ\n :selectors:\n - :selector: \'#ProdutoDetalhesPrecoComprarAgoraPrecoDePreco\'\n :attr_name: Projetor-Multimidia-Epson-Powerlite-S18-Resolucao-SVGA-1400x1050-3000-Lumens-HDMI\n- :link: http://goo.gl/r18Pu6\n :selectors:\n - :selector: \'#fsl\'\n :attr_name: Livro-Diario-de-um-Banana-Caindo-na-Estrada\n- :link: http://www.submarino.com.br/produto/122072993/livro-star-wars-kenobi\n :selectors:\n - :selector: .mp-pb-item.mp-pb-to.mp-price\n :attr_name: livro-star-wars-kenobi\n' WHERE `crawlers`.`id` = 3
+  [1m[36mCrawler Load (0.2ms)[0m  [1mSELECT `crawlers`.* FROM `crawlers` WHERE `crawlers`.`user_id` = 3 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `updated_at`) VALUES ('2015-04-07 17:04:55', 'john1@doe.com', '$2a$10$b0Uv6zJZbHC8aw9HxIDgQuKewBFfakeAUnYoLsKBYLxQSwerlzNlS', '2015-04-07 17:04:55')[0m
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'john1@doe.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m

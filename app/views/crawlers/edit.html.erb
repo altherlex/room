@@ -10,13 +10,21 @@
       </ul>
     </div>
   <% end %>
-
+<div class="row">
+  <div class="col-md-10">
   <div class="field">
     <%= f.label :parametrize %><br />
-    <%= f.text_area(:configuration, cols: 130, rows: 15)%>
+    <%#= f.text_area(:configuration, cols: 130, rows: 15)%>
     <%#= text_area_tag("crawler_configuration", @crawler.indentation_parametrize, cols: 130, rows: 25)%>
+    <%= f.text_area(:configuration, cols: 130, rows: 15)%>
+    <!--<textarea cols="130" rows="15" id="crawler_configuration" name="crawler[configuration]">
+      <%#= @crawler.parametrize %>
+      <%#= JSON.pretty_generate(@crawler.parametrize) %>
+      <%#= ap(@crawler.parametrize, {html:false, plain:true, index:false}) %>
+    </textarea>-->
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>

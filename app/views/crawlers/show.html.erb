@@ -1,20 +1,22 @@
-<%= link_to 'Edit', edit_crawler_path(@crawler) %> |<%#= link_to 'Back', crawlers_path %>
+<h3>Monitor your informations from internet and receive in your e-mail</h3>
+<%= link_to 'Edit', edit_crawler_path(@crawler) %> <%#= link_to 'Back', crawlers_path %>
 <div class="row" style="padding-bottom: 5px;">
   <div class="col-md-6">
-      <%= label @crawler, :parametrize %><br />
+    <%= label @crawler, :parametrize %><br />
   </div>
   <div class="col-md-6">
-    <a class="btn btn-default" href="#" onclick="test_parametrize()" role="button">Test</a>
+    <a class="btn btn-default" href="#" id="test" onclick="test_parametrize()" role="button">See value(s)</a>
   </div>
 </div>
 <Div class="row">
   <div class="col-md-6">
     <div class="field">
-      <pre><%= @crawler.indentation_parametrize %></pre>
+      <%= ap(@crawler.parametrize, {html:true, index:false}).html_safe %>
+      <%#= @crawler.indentation_parametrize %>
     </div>
   </div>
   <div class="col-md-6">
-    <pre id="result" name="result"></pre>
+    <div id="result" name="result"></div>
   </div>
 </div>
 <pre>
@@ -28,12 +30,15 @@ http://www.w3.org/TR/xpath/#axes
 function test_parametrize(){
   $.ajax({
     method: "GET",
-    url: "crawler.text"
+    url: "crawler.text",
+    beforeSend: function(){$("#modal-overlay").show();},
+    complete: function(){$("#modal-overlay").hide();},
   })
   .done(function( str_msg ) {
-    console.log(a = str_msg);
+    //console.log(a = str_msg);
     //$("#result").html( jQuery.parseJSON(msg.links) );
     $("#result").html(str_msg);
+    $('#test').text("Tested");
   });
 };
 </script>
