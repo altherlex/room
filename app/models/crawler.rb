@@ -34,7 +34,7 @@ class Crawler < ActiveRecord::Base
   class << self
     # Split trash code (\n, \t)
     def clean_parameters(value)
-      (value||"").split(/[\r\n]+/).join
+      (value||"").split(/[\r\n\t]+/).join(' ')
     end
     def access(link)
       open(link)
@@ -44,7 +44,7 @@ class Crawler < ActiveRecord::Base
       arr_selectors.inject([]){|ac, selector| 
         meth = :css
         meth = selector[:method].to_sym if selector[:method].present? and METHODS_VALIDS.include?(selector[:method].to_sym)
-        ac << selector.merge({value: document.send(meth, selector[:selector]).try(:text) })
+        ac << selector.merge({value: clean_parameters(document.send(meth, selector[:selector]).try(:text)) })
         ac
       }
     end
