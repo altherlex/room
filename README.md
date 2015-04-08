@@ -1,14 +1,20 @@
-# THE GREAT MEETING ROOM
+# Crawler-room - Monitoring informations from the internet and have them in your e-mail.
+
+For spying internet's information. 
+Here you can check many information from the internet and have them in your e-mail.
+It's easy to configure and useful for your daily use. You can follow: a price in store; mail package; etc.
+
+[use Crawler-room](https://crawler-room.herokuapp.com)
 
 A Rails 4 application for testing some ruby gems.
-
-Here's a [live demo](http://meeting-room.herokuapp.com/) from Heroku.
-Or try [here](http://dnatim.dyndns.org:3001) too
+[live demo tag v1](http://meeting-room.herokuapp.com/) (unuseful)
 
 <img src="https://travis-ci.org/altherlex/room.png?branch=master">
 
 ### Gems
 
+- [Awesome_print](https://github.com/michaeldv/awesome_print) for print parametrize
+- [Nokogiri](https://github.com/sparklemotion/nokogiri) for sweep the internet
 - [Mysql](https://github.com/brianmario/mysql2)
 - [Bootstrap 3](http://getbootstrap.com/)
 - [Haml](http://haml.info/)
@@ -28,7 +34,12 @@ Or try [here](http://dnatim.dyndns.org:3001) too
 - Rails 4
 - Mysql
 
-### To Do
+### TODO
+
+- Email sender
+- Callback configuration for close popup and other things
+
+### To Do (tag v1)
 
 - add column name for user
 - option to change language (i18n)
