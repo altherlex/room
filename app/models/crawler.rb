@@ -6,6 +6,7 @@ class Crawler < ActiveRecord::Base
             send_emails: [{email:"your-email@your-domain.com", at:"9am", every:"1.day"}]
           }]
         }
+  belongs_to :user
   serialize :configuration, Hash
   attr_accessor :parametrize
 
@@ -28,8 +29,15 @@ class Crawler < ActiveRecord::Base
 #  end
   def sweep_links
     result = Crawler.sweep_links(self.configuration)
-    self.configuration[:links] = result
+    self.configuration[:links] = result #.with_indifferent_access
     self.configuration
+  end
+  alias_method :load!, :sweep_links
+
+  def show
+    result = self.configuration[:links].map{|i| i['selectors']}.flatten.inject([]){|ac, i| ac<<[i[:attr_name], i[:value]]}
+    load! if result.map{|i| i.first}.compact.empty?
+    result = self.configuration[:links].map{|i| i['selectors']}.flatten.inject([]){|ac, i| ac<<[i[:attr_name], i[:value]]}
   end
   class << self
     # Split trash code (\n, \t)

@@ -7,6 +7,7 @@ FactoryGirl.define do
   factory :reserve do
     sequence(:id){|n| n+1000}
     date "2014-03-04 14:00:00"
-    user_id FactoryGirl.create(:user).id
+    #user_id FactoryGirl.create(:user).id
+    association :user
   end  
 end

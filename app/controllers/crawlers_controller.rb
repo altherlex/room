@@ -4,12 +4,16 @@ class CrawlersController < ApplicationController
   def show 
     @crawler = Crawler.find_or_create_by_user_id(user_id:current_user.id)
 
- Crawler.new.configuration.ai({html:true, index:false})
+# Crawler.new.configuration.ai({html:true, index:false})
 
     respond_to do |format|
       format.html # show.html.erb
       #format.text { render json: JSON.pretty_generate(@crawler.sweep_links) } 
-      format.text { render json: @crawler.sweep_links.ai({html:true, index:false}) } 
+      format.text { 
+        # Send email
+        CrawlerMailer.info_collected(@crawler).deliver
+        render json: @crawler.sweep_links.ai({html:true, index:false}) 
+      } 
     end
   end
   

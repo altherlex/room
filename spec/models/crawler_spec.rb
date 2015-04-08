@@ -61,6 +61,12 @@ describe Crawler do
     it "#sweep_links (instance method)" do
       Crawler.new.sweep_links[:links].map{|i| i[:selectors]}.flatten.map{|i| i[:value]}.join.should include('%')
     end
+    it "#show (return [['title', 'value']])" do
+      @crawler = Crawler.new(configuration:@PARAM)
+      param = @crawler.sweep_links
+      #puts @crawler.show.inspect
+      @crawler.show.join.should include('R$')
+    end
   end # context end
   context "CRUD" do
     let(:crawler){ 

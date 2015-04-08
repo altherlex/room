@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Collected internet's information, <%= @crawler.user.email %></p>
+    <%@crawler.show.each do |line|%>
+      <p><b><%=line.first%>:</b><%=line.last%></p>
+    <%end%>
+    <p>To alter your configuration, just follow this link: <%= @url %>.</p>
+  </body>
+</html>
