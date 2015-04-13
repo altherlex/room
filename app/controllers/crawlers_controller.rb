@@ -10,8 +10,12 @@ class CrawlersController < ApplicationController
       format.html # show.html.erb
       #format.text { render json: JSON.pretty_generate(@crawler.sweep_links) } 
       format.text { 
-        # Send email
-        CrawlerMailer.info_collected(@crawler).deliver
+        begin
+          # Send email for user
+          CrawlerMailer.info_collected( @crawler ).deliver
+        rescue => e
+          flash[:alert] = "Email send error: #{e.message}"
+        end        
         render json: @crawler.sweep_links.ai({html:true, index:false}) 
       } 
     end
