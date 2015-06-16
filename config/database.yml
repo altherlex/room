@@ -1,44 +1,24 @@
-# MySQL.  Versions 4.1 and 5.0 are recommended.
-#
-# Install the MYSQL driver
-#   gem install mysql2
-#
-# Ensure the MySQL gem is defined in your Gemfile
-#   gem 'mysql2'
-#
-# And be sure to use new-style password hashing:
-#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
-development:
-  adapter: mysql2
-  encoding: utf8
-  database: room_development
+default: &default
+  adapter: sqlite3
   pool: 5
-  username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+  timeout: 5000
+development:
+  <<: *default
+  database: db/development.sqlite3
+test:
+  <<: *default
+  database: db/test.sqlite3
+# production:
+#   <<: *default
+#   database: db/production.sqlite3
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-
-#development_pg:
+# development_pg:
 #  adapter: postgresql
 #  encoding: unicode
 #  database: room_development
 #  pool: 5
 #  username: postgres
 #  password: admin
-#
-
-test:
-  adapter: mysql2
-  encoding: utf8
-  database: room_test
-  pool: 5
-  username: root
-  password: 
-  socket: /var/lib/mysql/mysql.sock
-
 #test:
 #  adapter: postgresql
 #  encoding: unicode
@@ -47,10 +27,10 @@ test:
 #  username: postgres
 #  password: 
 #
-#production:
-#  adapter: postgresql
-#  encoding: unicode
-#  database: room_production
-#  pool: 5
-#  password: admin
+production:
+ adapter: postgresql
+ encoding: unicode
+ database: room_production
+ pool: 5
+ password: admin
 

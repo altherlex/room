@@ -5,8 +5,8 @@ ruby '2.0.0'
 gem "rails", "4.0.2"
 
 gem "pg", :group => :production
-gem "mysql2", :group => :development
-#gem "pg" #, :require => "pg"
+gem 'sqlite3', :group => :development
+#gem "pg", :require => "pg"
 
 # Compressor of JavaScript assets
 gem "uglifier", ">= 1.3.0"
@@ -27,7 +27,8 @@ gem "dynamic_form"
 
 group :test, :development do
   gem "rspec-rails"
-  gem "debugger"
+  #gem "debugger"
+  gem "byebug"
   gem "awesome_print"
 end
 
@@ -55,9 +56,9 @@ gem 'rails_12factor', group: :production
 
 gem 'haml'
 gem 'fullcalendar-rails'
-gem 'therubyracer'
+#gem 'therubyracer'
 
 #gem "open-uri" #ruby core
-gem "nokogiri"
+#gem "nokogiri"
 gem "json"
 gem "awesome_print"
