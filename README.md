@@ -36,7 +36,7 @@ A Rails 4 application for testing some ruby gems.
 
 ### TODO
 
-- Email sender
+- Email sender [Sidekiq](http://sidekiq.org/)
 - Callback configuration for close popup and other things
 
 ### To Do (tag v1)
