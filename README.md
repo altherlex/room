@@ -36,7 +36,8 @@ A Rails 4 application for testing some ruby gems.
 
 ### TODO
 
-- Email sender [Sidekiq](http://sidekiq.org/)
+- Email sender ([Sidekiq](http://sidekiq.org/) & [Clockwork](https://github.com/tomykaira/clockwork))
+  worker: bundle exec sidekiq ...
 - Callback configuration for close popup and other things
 
 ### To Do (tag v1)
