@@ -13,9 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20150401141450) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "crawlers", force: true do |t|
-    t.text     "configuration", limit: 16777215, null: false
-    t.integer  "user_id",                        null: false
+    t.text     "configuration", null: false
+    t.integer  "user_id",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

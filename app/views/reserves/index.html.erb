@@ -1,0 +1,22 @@
+<%= link_to "<h3 class='label label-success'>History</h3>".html_safe, '/reserves/show' %>
+<table class="table table-striped table-hover table-condensed table-bordered">
+	<thead class="alert alert-info">
+		<tr>
+			<% head_tag.each do |item| %>
+				<th><%= item %></th>
+			<%end%>
+		</tr>
+	</thead>
+	<tbody>
+		<% (6..23).to_a.map(&:to_s).inject([]){|ac, i| ac<<[i+':00', i];ac}.each do |label, hour| %>
+			<tr>
+				<th> <%= label %> </th>
+				<th> <%= reserve_tag(now, hour) %> </th>
+				<th> <%= reserve_tag(now+1.day, hour) %> </th>
+				<th> <%= reserve_tag(now+2.day, hour) %> </th>
+				<th> <%= reserve_tag(now+3.day, hour) %> </th>
+				<th> <%= reserve_tag(now+4.day, hour) %> </th>
+			</tr>
+		<%end%>
+	</tbody>
+</table>

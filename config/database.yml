@@ -1,36 +1,18 @@
-default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
 development:
-  <<: *default
-  database: db/development.sqlite3
-test:
-  <<: *default
-  database: db/test.sqlite3
-# production:
-#   <<: *default
-#   database: db/production.sqlite3
+  adapter: postgresql
+  database: crawler_development
+  host: localhost
+  pool: 5
 
-# development_pg:
-#  adapter: postgresql
-#  encoding: unicode
-#  database: room_development
-#  pool: 5
-#  username: postgres
-#  password: admin
-#test:
-#  adapter: postgresql
-#  encoding: unicode
-#  database: room_test
-#  pool: 5
-#  username: postgres
-#  password: 
-#
+test:
+  adapter: postgresql
+  database: crawler_test
+  host: localhost
+  pool: 5
+
 production:
  adapter: postgresql
  encoding: unicode
  database: room_production
  pool: 5
  password: admin
-

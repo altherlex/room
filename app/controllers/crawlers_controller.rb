@@ -4,18 +4,9 @@ class CrawlersController < ApplicationController
   def show 
     @crawler = Crawler.find_or_create_by_user_id(user_id:current_user.id)
 
-# Crawler.new.configuration.ai({html:true, index:false})
-
     respond_to do |format|
       format.html # show.html.erb
-      #format.text { render json: JSON.pretty_generate(@crawler.sweep_links) } 
       format.text { 
-        begin
-          # Send email for user
-          CrawlerMailer.info_collected( @crawler ).deliver
-        rescue => e
-          flash[:alert] = "Email send error: #{e.message}"
-        end        
         render json: @crawler.sweep_links.ai({html:true, index:false}) 
       } 
     end
@@ -28,19 +19,6 @@ class CrawlersController < ApplicationController
   def update
     erro_msg = ""
     @crawler = Crawler.find_by_user_id current_user.id
-
-=begin
-    begin 
-      YAML.load(params[:crawler][:configuration]).try(:with_indifferent_access)
-    rescue => e
-      if e.is_a? Psych::SyntaxError
-        erro_msg = "Error when parametrize in json. Error message:#{e.message}"
-      else
-        erro_msg = "Unknow error. Check parametrize configuration"
-      end
-      flash[:alert]= erro_msg
-    end
-=end
 
     respond_to do |format|
       if !erro_msg.present? and @crawler.update_attributes(_params)
